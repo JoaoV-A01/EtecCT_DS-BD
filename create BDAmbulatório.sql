@@ -3,7 +3,7 @@ CREATE DATABASE bdAmbulatório
 use bdAmbulatório
 
 create table tbpacientes(
-	idpaciente int primary key identity (102,1)
+	idpaciente int primary key identity (101,1)
 	,nome varchar (45)
 	,sexo varchar (1)
 	,idade int 
