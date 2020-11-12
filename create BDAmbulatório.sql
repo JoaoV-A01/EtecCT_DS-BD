@@ -1,6 +1,6 @@
-CREATE DATABASE bdAmbulatório
+CREATE DATABASE bdAmbulatÃ³rio
 
-use bdAmbulatório
+use bdAmbulatÃ³rio
 
 create table tbpacientes(
 	idpaciente int primary key identity (102,1)
@@ -18,7 +18,7 @@ create table tbdoencas(
 create table tbambulatorios(
 	idambulatorios int primary key identity (1,1)
 	,numero varchar (45)
-	,andar int
+	,andar varchar (10)
 	,capacidade int
 );
 
@@ -33,7 +33,7 @@ create table tbmedicos(
 	,idespecialidades int foreign key references tbespecialidades (idespecialidades)
 	,nome varchar (45)
 	,crm varchar (45)
-	,salario float 
+	,salario money 
 	,idade int
 );
 
@@ -43,7 +43,7 @@ create table tbfuncionarios(
 	,nome varchar (45)
 	,idade int
 	,sexo varchar (1)
-	,salario float
+	,salario money
 	,cidade varchar (45)
 );
 
