@@ -6,7 +6,7 @@ create table tbpacientes(
 	idpaciente int primary key identity (101,1)
 	,nome varchar (45)
 	,sexo varchar (1)
-	,idade varchar (5) 
+	,idade varchar (3) 
 	,doenca_inicial varchar (50)
 );
 
@@ -34,14 +34,14 @@ create table tbmedicos(
 	,nome varchar (45)
 	,crm varchar (45)
 	,salario money 
-	,idade varchar (5)
+	,idade varchar (3)
 );
 
 create table tbfuncionarios(
 	idfuncionarios int primary key identity (1,1)
 	,idambulatorios int foreign key references tbambulatorios (idambulatorios)
 	,nome varchar (45)
-	,idade varchar (5)
+	,idade varchar (3)
 	,sexo varchar (1)
 	,salario money
 	,cidade varchar (45)
