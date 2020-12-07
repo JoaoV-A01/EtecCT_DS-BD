@@ -1,0 +1,26 @@
+insert into tbFunc(nomeFunc, uf, idade, qtdeFilhos)
+values   ('Bruce Wayne', 'MG', 35, 4)
+	,('Barry Allen', 'SP', 25, 2)
+	,('Jinx', 'SP', 18, 0)
+	,('Swain', 'RJ', 60, 5)
+	,('Maokai', 'MG', 200, 20)
+	,('Wade Wilson', 'SP', 100, 0)
+	,('Peter Paker', 'ES', 20, 3)
+	,('Joe', 'RJ', 50, 1)
+	,('Senna', 'RJ', 25, 2)
+	,('Kami', 'SP', 26, 1)
+select *from tbFunc
+
+insert into tbFuncional(cargo, salário, tempoEmpresa, tempoCargo, sindicalizado, codFunc)
+values   ('Empresario', 10000000000, 35, 30, 'nao', 1)
+	,('Cientista Forence', 5000, 6, 5, 'sim', 2)
+	,('Explodidora', 0, 10, 7, 'nao', 3)
+	,('General', 12500, 12, 3, 'nao', 4)
+	,('Guarda Florestal', 2500.00, 35, 35, 'nao', 5)
+	,('Mercenario', 30000, 2, 1, 'nao', 6)
+	,('Jornalista', 1000.00, 2, 1, 'sim', 7)
+	,('Contrabandista', 4000, 3, 3, 'nao', 8)
+	,('Sentila da Luz', 0, 7, 4, 'sim', 9)
+	,('Streamer', 10000, 8, 4, 'sim', 10)
+select *from tbFuncional
+
